@@ -1,0 +1,25 @@
+{
+  "name": "e2e-test-cypress-setup",
+  "version": "1.0.0",
+  "description": "E2E Test Cypress Setup Example",
+  "main": "setup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegohdb/E2E-Test-Cypress-Setup.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Diego Bezerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegohdb/E2E-Test-Cypress-Setup/issues"
+  },
+  "homepage": "https://github.com/diegohdb/E2E-Test-Cypress-Setup#readme",
+  "dependencies": {
+    "cypress-dotenv": "^2.0.0"
+  }
+}

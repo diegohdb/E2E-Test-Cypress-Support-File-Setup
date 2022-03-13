@@ -1,0 +1,4 @@
+{
+    "baseUrl": "https://demo.realworld.io/#/",
+    "supportFile": "cypress/support/setup.js"
+}
