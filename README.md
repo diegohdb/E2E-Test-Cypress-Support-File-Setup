@@ -1,4 +1,4 @@
-<h1 align="left">:computer: E2E-Test-Cypress-Setup  </h1>
+<h1 align="left">:computer: E2E-Test-Cypress-Support-File-Setup  </h1>
 
 This is a simple and detailed tutorial for an E2E test project using Cypress with support file setup
 
