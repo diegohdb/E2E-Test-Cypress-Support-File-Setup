@@ -1,11 +1,11 @@
 <h1 align="left">:computer: E2E-Test-Cypress-Setup  </h1>
 
-This is a simple and detailed tutorial for an E2E test project using Cypress
+This is a simple and detailed tutorial for an E2E test project using Cypress with support file setup
 
 ## Introduction
 
 This project contains a tutorial for E2E test automation of the <a href="https://demo.realworld.io/#/">Conduit website</a>.
-The automation will cover only few tests since the main idea is to setup the framework from scratch and add the details for anyone that wants to create this setup by their own.
+The automation will cover only few tests since the main idea is to setup the framework from scratch with a support file setup and add the details for anyone that wants to create this setup by their own.
 
 
 ## Environment Setup
@@ -33,14 +33,16 @@ npx cypress open
 ```
 
 The Cypress IDE will be launched with some test files example.
-
-![alt ide](images/cypress_ide.png)
+<p align="left">
+  <img src="images/cypress_ide.png" />
+</p>
 
 Delete example files (if you want to). On the IDE you can click in the button or you can delete the whole folder located on *cypress/integration*
 
 The project structure should be like this at this point:
-
-![alt project](images/project_tree.png)
+<p align="left">
+  <img src="images/project_tree.png" />
+</p>
 
 ## Setup Base URL:
 
@@ -54,7 +56,10 @@ Since we are going to test the Conduit website, the base url will be -*https://d
 
 ## Create and map the pages:
 - Add a *pages* folder in *cypress/support*
-![alt project](images/project_pages.png)
+
+<p align="left">
+  <img src="images/project_pages.png" />
+</p>
 
 - Create a *pageName.js* file for each page
 ```
@@ -107,7 +112,7 @@ Since we are going to login in the application, create an user and add the email
 }
 ```
 
-## Create a setup file
+## Create a support file
 - Create a *setup.js* file in *cypress/support*
 The Cypress will read this file when started, so we can define some data to be used in all tests through a global hook, such as a *beforeEach()* with an object that contains the **pages** and **user** data. And also, we can import other files like **customized commands**.
 
@@ -148,7 +153,10 @@ beforeEach(() => {
 
 - For a more organized commands you can create a commands folder in *support/commands* and inside it add the command types in files, for example, a *login* command will be added inside the *loggin_commands.js*.
 
-![alt project](images/commands.png)
+<p align="left">
+  <img src="images/commands.png" />
+</p>
+
 
 A login_commands file will be like this:
 ```

@@ -1,5 +1,6 @@
 import './commands';
 const pages = require('./pages/pages')
+const { faker } = require('@faker-js/faker');
 
 const user = {
 	email: Cypress.env('AUTH_EMAIL'),
@@ -8,6 +9,7 @@ const user = {
 };
 
 const generateTestObject = () => ({
+	faker,
 	pages,
 	user,
 });
